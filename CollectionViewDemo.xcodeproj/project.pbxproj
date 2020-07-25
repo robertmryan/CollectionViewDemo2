@@ -13,6 +13,8 @@
 		83D730F724CC529D00AA6757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D730F524CC529D00AA6757 /* Main.storyboard */; };
 		83D730F924CC529E00AA6757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D730F824CC529E00AA6757 /* Assets.xcassets */; };
 		83D730FC24CC529E00AA6757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D730FA24CC529E00AA6757 /* LaunchScreen.storyboard */; };
+		83D7310824CC530800AA6757 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7310624CC530800AA6757 /* CustomCell.swift */; };
+		83D7310924CC530800AA6757 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7310724CC530800AA6757 /* CustomHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		83D730F824CC529E00AA6757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D730FB24CC529E00AA6757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D730FD24CC529E00AA6757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D7310624CC530800AA6757 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		83D7310724CC530800AA6757 /* CustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		83D7310A24CC56DE00AA6757 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		83D7310B24CC5B8200AA6757 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,8 @@
 		83D730E324CC529D00AA6757 = {
 			isa = PBXGroup;
 			children = (
+				83D7310A24CC56DE00AA6757 /* README.md */,
+				83D7310B24CC5B8200AA6757 /* LICENSE.md */,
 				83D730EE24CC529D00AA6757 /* CollectionViewDemo */,
 				83D730ED24CC529D00AA6757 /* Products */,
 			);
@@ -56,15 +64,41 @@
 		83D730EE24CC529D00AA6757 /* CollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				83D7310524CC52E100AA6757 /* Support files */,
+				83D7310324CC52AF00AA6757 /* App lifecycle */,
+				83D7310424CC52D000AA6757 /* View */,
+			);
+			path = CollectionViewDemo;
+			sourceTree = "<group>";
+		};
+		83D7310324CC52AF00AA6757 /* App lifecycle */ = {
+			isa = PBXGroup;
+			children = (
 				83D730EF24CC529D00AA6757 /* AppDelegate.swift */,
 				83D730F124CC529D00AA6757 /* SceneDelegate.swift */,
+			);
+			path = "App lifecycle";
+			sourceTree = "<group>";
+		};
+		83D7310424CC52D000AA6757 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				83D730F324CC529D00AA6757 /* ViewController.swift */,
+				83D7310624CC530800AA6757 /* CustomCell.swift */,
+				83D7310724CC530800AA6757 /* CustomHeader.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83D7310524CC52E100AA6757 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
 				83D730F524CC529D00AA6757 /* Main.storyboard */,
 				83D730F824CC529E00AA6757 /* Assets.xcassets */,
 				83D730FA24CC529E00AA6757 /* LaunchScreen.storyboard */,
 				83D730FD24CC529E00AA6757 /* Info.plist */,
 			);
-			path = CollectionViewDemo;
+			name = "Support files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +174,9 @@
 			files = (
 				83D730F424CC529D00AA6757 /* ViewController.swift in Sources */,
 				83D730F024CC529D00AA6757 /* AppDelegate.swift in Sources */,
+				83D7310824CC530800AA6757 /* CustomCell.swift in Sources */,
 				83D730F224CC529D00AA6757 /* SceneDelegate.swift in Sources */,
+				83D7310924CC530800AA6757 /* CustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
